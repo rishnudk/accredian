@@ -23,9 +23,11 @@ export default function Partnerships() {
           <div key={company.name} className="relative h-16 w-32 md:w-36 flex items-center justify-center">
             <Image
               src={company.src}
-              alt={company.name}
+              alt={`${company.name} logo`}
               fill
+              sizes="(max-width: 768px) 128px, 144px"
               className="object-contain"
+              loading="lazy"
             />
           </div>
         ))}

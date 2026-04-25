@@ -48,9 +48,11 @@ export default function Testimonials() {
               <div className="relative h-12 w-32 mb-6 flex justify-start items-center">
                 <Image
                   src={testimonial.logo}
-                  alt={testimonial.company}
+                  alt={`${testimonial.company} logo`}
                   fill
+                  sizes="128px"
                   className="object-contain object-left"
+                  loading="lazy"
                 />
               </div>
               <p className="text-gray-700 text-[15px] leading-relaxed">
@@ -76,9 +78,11 @@ export default function Testimonials() {
               <div className="relative h-10 w-28 mb-6 flex justify-start items-center">
                 <Image
                   src={testimonial.logo}
-                  alt={testimonial.company}
+                  alt={`${testimonial.company} logo`}
                   fill
+                  sizes="112px"
                   className="object-contain object-left"
+                  loading="lazy"
                 />
               </div>
               <p className="text-gray-700 text-[15px] leading-relaxed">

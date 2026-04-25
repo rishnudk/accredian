@@ -49,8 +49,9 @@ export default function Hero() {
           <div className="relative w-full h-full">
             <Image
               src="/hero.webp"
-              alt="Professionals"
+              alt="Enterprise professionals collaborating on training solutions"
               fill
+              sizes="(max-width: 768px) 100vw, 45vw"
               className="object-contain object-bottom md:object-right-bottom"
               priority
             />

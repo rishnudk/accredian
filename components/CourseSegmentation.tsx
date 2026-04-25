@@ -42,9 +42,11 @@ export default function CourseSegmentation() {
             <div className="relative w-full h-[180px]">
               <Image
                 src={course.image}
-                alt={course.title}
+                alt={`${course.title} course category`}
                 fill
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 className="object-cover"
+                loading="lazy"
               />
             </div>
             <div className="p-6 flex flex-col flex-grow items-center">

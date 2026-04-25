@@ -18,9 +18,11 @@ export default function SkillEnhancement() {
           <div className="hidden lg:block absolute -bottom-[120px] -left-10 w-[450px] h-[350px] z-10 pointer-events-none">
              <Image
                 src="/images/imagehuman.png"
-                alt="Professionals"
+                alt="Professional in enterprise training environment"
                 fill
+                sizes="450px"
                 className="object-contain object-bottom"
+                loading="lazy"
               />
           </div>
         </div>

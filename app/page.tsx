@@ -19,26 +19,38 @@ export default function Home() {
       <Navbar />
       <main className="flex-1 w-full flex flex-col items-center">
         <Hero />
-        <TrackRecord />
-        <Partnerships />
-        <AccredianEdge />
+        <section id="stats" aria-label="Track Record">
+          <TrackRecord />
+        </section>
+        <section id="clients" aria-label="Partnerships">
+          <Partnerships />
+        </section>
+        <section id="accredian-edge" aria-label="Accredian Edge">
+          <AccredianEdge />
+        </section>
         <DomainExpertise />
         <CourseSegmentation />
-        <SkillEnhancement />
-        <CatFramework />
-        <DeliverResults />
-        <FAQ />
-        <Testimonials />
+        <section id="who-should-join" aria-label="Who Should Join">
+          <SkillEnhancement />
+        </section>
+        <section id="cat" aria-label="CAT Framework">
+          <CatFramework />
+        </section>
+        <section id="how-it-works" aria-label="How We Deliver Results">
+          <DeliverResults />
+        </section>
+        <section id="faqs" aria-label="Frequently Asked Questions">
+          <FAQ />
+        </section>
+        <section id="testimonials" aria-label="Testimonials">
+          <Testimonials />
+        </section>
         <CTA />
       </main>
       <Footer />
     </div>
   );
 }
-
-
-
-
 
 
 

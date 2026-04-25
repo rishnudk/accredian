@@ -56,8 +56,9 @@ export default function EnquireModal({ isOpen, onClose }: EnquireModalProps) {
         <div className="hidden md:block md:w-1/2 relative bg-gray-100">
           <Image
             src="/images/form-image.webp"
-            alt="Enquire Now"
+            alt="Accredian enterprise training enquiry"
             fill
+            sizes="(max-width: 768px) 0px, 450px"
             className="object-cover"
             priority
           />

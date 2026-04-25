@@ -2,9 +2,11 @@
 
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
+import EnquireModal from "./EnquireModal";
 
 export default function FAQ() {
   const [activeCategory, setActiveCategory] = useState("About the Course");
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const categories = [
     "About the Course",
@@ -65,9 +67,17 @@ export default function FAQ() {
         </div>
       </div>
 
-      <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg transition-colors shadow-md text-lg">
+      <button
+        onClick={() => setIsModalOpen(true)}
+        className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg transition-colors shadow-md text-lg"
+      >
         Enquire Now
       </button>
+
+      <EnquireModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      />
     </section>
   );
 }

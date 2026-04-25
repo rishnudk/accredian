@@ -1,7 +1,13 @@
+"use client";
+
 import Link from "next/link";
 import { FaFacebook, FaLinkedin, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
+import { useState } from "react";
+import EnquireModal from "./EnquireModal";
 
 export default function Footer() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <footer className="w-full bg-white pt-20 pb-8 border-t border-gray-100">
       <div className="max-w-[1200px] mx-auto px-6 w-full flex flex-col">
@@ -37,7 +43,10 @@ export default function Footer() {
 
           {/* CTA */}
           <div className="flex flex-col items-start md:items-end">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-2.5 rounded-lg transition-colors shadow-sm mb-2 text-[15px]">
+            <button
+              onClick={() => setIsModalOpen(true)}
+              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-2.5 rounded-lg transition-colors shadow-sm mb-2 text-[15px]"
+            >
               Enquire Now
             </button>
             <span className="text-gray-600 text-sm">Speak with our Advisor</span>
@@ -77,6 +86,11 @@ export default function Footer() {
         </div>
 
       </div>
+
+      <EnquireModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      />
     </footer>
   );
 }

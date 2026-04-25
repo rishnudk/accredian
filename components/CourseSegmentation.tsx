@@ -5,22 +5,22 @@ export default function CourseSegmentation() {
     {
       title: "Program Specific",
       description: "Certificate, Executive, Post Graduate Certificate",
-      image: "/images/courses/program_specific.png",
+      image: "/images/courses/program_specific.webp",
     },
     {
       title: "Industry Specific",
       description: "IT, Healthcare, Retail, Finance, Education, Manufacturing",
-      image: "/images/courses/industry_specific.png",
+      image: "/images/courses/industry_specific.webp",
     },
     {
       title: "Topic Specific",
       description: "Machine Learning, Design, Analytics, Cybersecurity, Cloud",
-      image: "/images/courses/topic_specific.png",
+      image: "/images/courses/topic_specific.webp",
     },
     {
       title: "Level Specific",
       description: "Senior Leadership, Mid-Career Professionals, Freshers",
-      image: "/images/courses/level_specific.png",
+      image: "/images/courses/level_specific.webp",
     },
   ];
 

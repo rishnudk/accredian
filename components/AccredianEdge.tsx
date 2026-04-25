@@ -16,7 +16,9 @@ export default function AccredianEdge() {
           alt="The Accredian Edge Diagram"
           width={1200}
           height={500}
+          sizes="(max-width: 1200px) 100vw, 1200px"
           className="w-full h-auto object-contain"
+          loading="lazy"
         />
       </div>
     </section>

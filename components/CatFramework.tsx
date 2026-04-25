@@ -17,7 +17,9 @@ export default function CatFramework() {
             alt="The CAT Framework Concept, Application, Tools"
             width={1000}
             height={400}
+            sizes="(max-width: 1000px) 100vw, 1000px"
             className="w-full h-auto object-contain"
+            loading="lazy"
           />
         </div>
       </div>

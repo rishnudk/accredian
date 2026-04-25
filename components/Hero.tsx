@@ -1,7 +1,13 @@
+"use client";
+
 import Image from "next/image";
 import { CheckCircle2 } from "lucide-react";
+import { useState } from "react";
+import EnquireModal from "./EnquireModal";
 
 export default function Hero() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <section className="px-6 py-12 max-w-[1400px] mx-auto w-full">
       <div className="relative bg-[#f0f6ff] rounded-[3rem] overflow-hidden flex flex-col md:flex-row items-center justify-between min-h-[550px] shadow-sm">
@@ -30,7 +36,10 @@ export default function Hero() {
             </div>
           </div>
 
-          <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3.5 rounded-lg transition-colors shadow-md text-lg">
+          <button 
+            onClick={() => setIsModalOpen(true)}
+            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3.5 rounded-lg transition-colors shadow-md text-lg"
+          >
             Enquire Now
           </button>
         </div>
@@ -48,6 +57,11 @@ export default function Hero() {
           </div>
         </div>
       </div>
+
+      <EnquireModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+      />
     </section>
   );
 }
